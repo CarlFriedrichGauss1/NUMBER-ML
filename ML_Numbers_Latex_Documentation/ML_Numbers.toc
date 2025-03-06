@@ -1,0 +1,8 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{Δομή Νευρωνικού Δικτύου}{1}{section*.2}%
+\contentsline {section}{Input}{2}{section*.3}%
+\contentsline {section}{ReLU, Softmax (συναρτήσεις ενεργοποίησης)}{3}{section*.4}%
+\contentsline {section}{Mean squared error}{4}{section*.5}%
+\contentsline {section}{Forward Propagation}{5}{section*.6}%
+\contentsline {section}{Backward Propagation}{6}{section*.7}%
+\contentsline {section}{Gradient Descent}{10}{section*.8}%
