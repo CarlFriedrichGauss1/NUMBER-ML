@@ -6,3 +6,4 @@
 \contentsline {section}{Forward Propagation}{5}{section*.6}%
 \contentsline {section}{Backward Propagation}{6}{section*.7}%
 \contentsline {section}{Gradient Descent}{10}{section*.8}%
+\contentsline {section}{Εφαρμογή Αλγόριθμου}{11}{section*.9}%

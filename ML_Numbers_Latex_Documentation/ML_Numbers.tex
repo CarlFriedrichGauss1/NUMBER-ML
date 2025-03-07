@@ -17,16 +17,42 @@
 \usepackage{datetime2}
 \usepackage{xcolor}
 \usepackage{kerkis} %ΚΑΛΟΟΟΟ
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{eulervm}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{float}
+\usepackage{algpseudocode}
+
+
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{green!50!black},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    showstringspaces=false,
+    frame=single,
+    breaklines=true,
+    tabsize=4
+}
+
+\lstset{style=pythonstyle}
+
+
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{shadows}
 \usetikzlibrary{backgrounds}
 
 
-\usepackage{eulervm}
 
 
 
-\definecolor{mycolor}{RGB}{241, 237, 221,} % A light yellowish color
+\definecolor{mycolor}{RGB}{241, 235, 225,} % A light yellowish color
 \pagecolor{mycolor}
 
 
@@ -309,7 +335,7 @@ y_i = μ, & \text{αν } i = μ \\
 
 Έπειτα παίρνουμε το άθροισμα των τετραγώνων των διαφορών των τιμών του output με το $\mathbf{y}$. 
 
-Αρα το loss του συστήματος, εξαρτάται απο το διάνυσμα που μας δίνει το output layer έπειτα απο την εφαρμογή της softmax αλλα και το $\mathbf{b}$, δηλαδή
+Αρα το loss του συστήματος, εξαρτάται απο το διάνυσμα που μας δίνει το output layer έπειτα απο την εφαρμογή της softmax αλλα και το $\mathbf{y}$, δηλαδή
 \[
 \mathcal{L}= \sum_{i=1}^{10} (a_i^{[L]} - y_i)^2 
 \]
@@ -406,7 +432,7 @@ a_{i}^{(l)} = w_{i,j} \cdot a_{j}^{(l-1)} + b_i \label{eq:linear}
 \end{center}
 \addcontentsline{toc}{section}{Backward Propagation} 
 
-Ο στόχος μας είναι να ελαχιστοποιήσουμε το loss του νευρωνικού δυκτίου. Για να το πετύχουμε αυτό θα πρέπει αν βρούμε τα ελάχιστα της συνάρτησης του loss $\mathcal{L} = \sum_{i=1}^{10} (a_i^{(l)} - y_i)^2$. Για να βρούμε το ελάχιστό της ξεκινόντας απο ένα τυχαίο σημείο της, θα πρέπει να κινηθούμε προς την κατεύθυνση κατα την οποία η συνάρτηση μειώνεται γρηγορότερα.  Όμως απο θεωρία γνωρίζουμε οτι μια συνάρτηση $f$ αυξάνεται γρηγορότερα κατα την κατά την κατεύθυνση του διανύσματος $\overrightarrow{\nabla f}$ και επομένως θα πρέπει να κινηθούμε στην κατεύθυνση του διανύσματος $-\overrightarrow{\nabla f}$. 
+Ο στόχος μας είναι να ελαχιστοποιήσουμε το loss του νευρωνικού δυκτίου. Για να το πετύχουμε αυτό θα πρέπει αν βρούμε τα ελάχιστα της συνάρτησης του loss $\mathcal{L} = \sum_{i=1}^{10} (a_i^{(l)} - y_i)^2$. Για να βρούμε το ελάχιστό της ξεκινόντας απο ένα τυχαίο σημείο της, θα πρέπει να κινηθούμε προς την κατεύθυνση κατα την οποία η συνάρτηση μειώνεται γρηγορότερα.  Όμως απο θεωρία γνωρίζουμε οτι μια συνάρτηση $f$ αυξάνεται γρηγορότερα κατα την κατά την κατεύθυνση του διανύσματος $\overrightarrow{\nabla \mathcal{L}}$ και επομένως θα πρέπει να κινηθούμε στην κατεύθυνση του διανύσματος $-\overrightarrow{\nabla \mathcal{L}}$. 
 
 Άρα για την συνάρητηση $\mathcal{L}$ αρκεί να βρούμε την παράγωγό της προς όλα τα βάρη και biases δηλαδη για τα βάρη στο $l$-layer
 
@@ -418,7 +444,7 @@ $$
 \[
 z_{i}^{(l)} = w_{i,j}^{(l)} \cdot a_{j}^{(l-1)} + b_{i}^{(l)}
 \]
-η τιμή του νευρώνα i πριν εφαρμόσουμε την συνάρτηση ενεργοποίησης.
+η τιμή του νευρώνα i πριν εφαρμόσουμε την συνάρτηση ενεργοποίησης ReLU.
 
 Έστω σ η συνάρτηση ενεργοποίησης και $a_i$ η τιμή του νευρώνα μετα την εφαρμογή της σ, δηλαδή
 \[
@@ -667,7 +693,6 @@ $
     \frac{\partial \mathcal{L}}{\partial w_{10}^{(2)}}
 \end{bmatrix}  \quad \text{(χρισημοποιώντας την \(\eqref{eq:grad_weight_l2}\))}
 \]
-το οποίο είναι τετριμμένο.
 \\
 Επίσης θα δείξουμε ότι 
 \begin{align*}
@@ -687,7 +712,6 @@ $
 \frac{\partial \mathcal{L}}{\partial b_{10}^{(2)}}
 \end{bmatrix} \quad \text{(χρισημοποιώντας την \(\eqref{eq:grad_bias_l2}\))}
 \end{align*}
-επίσης τετριμμένο αποτέλεσμα.
 \\
 Θα δείξουμε ότι 
 \begin{align*}
@@ -766,7 +790,7 @@ w_{10,1} & w_{10,2} & \ldots & w_{10,10}
 \end{bmatrix} \quad \text{(χρισημοποιώντας την \(\eqref{eq:grad_weight2}\))}
 \end{align*}
 
-
+με $p_i, i\in [1,2,\dots, 784]$ να είναι η τιμή του i-οστού pixel.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -788,7 +812,160 @@ w_{10,1} & w_{10,2} & \ldots & w_{10,10}
 \end{center}
 \addcontentsline{toc}{section}{Gradient Descent} 
 
-Όπως αναφέραμε και στο Back propagation, στόχος μας είναι να βρούμε το ολικό ελάχιστο της συνάρτησης κόστους  $\mathcal{L}$ και άρα να κινηθούμε στην κατεύθυνση του $\overrightarrow{\nabla f}$
-Γράφω κάτι όχι συγκεκριμένο και καινούριο $$\sum_{min}^{max} \mathcal{X}$$
+Όπως αναφέραμε και στο Back propagation, στόχος μας είναι να βρούμε το ολικό ελάχιστο της συνάρτησης κόστους  $\mathcal{L}$ και άρα να κινηθούμε στην κατεύθυνση του $-\overrightarrow{\nabla \mathcal{L}}$.
+Επομένως θα πρέπει να ανανεώνουμε για κάθε input, τις εισόδους τα βάρη και biases ως εξης
+\begin{align*}
+    \left( W_1\right)_{\text{new}} &= \left( W_1\right)_{\text{old}} - \alpha \frac{\partial \mathcal{L}}{\partial w_{i}^{(1)}} \\
+    \left( W_2\right)_{\text{new}} &= \left( W_2\right)_{\text{old}} - \alpha \frac{\partial \mathcal{L}}{\partial w_{i}^{(2)}} \\
+    \left( b_1\right)_{\text{new}} &= \left( b_1\right)_{\text{old}} - \alpha \frac{\partial \mathcal{L}}{\partial b_{i}^{(1)}} \\
+    \left( b_2\right)_{\text{new}} &= \left( b_2\right)_{\text{old}} - \alpha \frac{\partial \mathcal{L}}{\partial b_{i}^{(2)}} \\
+\end{align*}
+με $\alpha \in \mathbb{R}$. Η λογική πίσω απο την ανανέωση των τιμών των βαρών και biases είναι η κίνησή μας πάνω στην καμπύλη
+στην κατέυθυνση του $-\nabla \mathcal{L}$. Για να βεβαιωθούμε όμως ότι τα "βήματα" που κάνουμε θα μας οδηγήσουν προς το ολικό ελάχιστο
+θα πρέπει η μεταβολή της θέσης μας απο το σημείο που βρισκόμαστε να είναι αρκετά μικρή και άρα πρέπει $0<\alpha <<1$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section*{}
+\markright{Εφαρμογή Αλγορίθμου}
+\begin{center}
+    \Large \textbf{Εφαρμογή Αλγόριθμου}
+\end{center}
+\addcontentsline{toc}{section}{Εφαρμογή Αλγόριθμου} 
+
+\setlength{\floatsep}{10pt}
+\setlength{\textfloatsep}{10pt}
+\setlength{\intextsep}{10pt}
+
+% Αρχικά αρχικοποιούμε τις βασικές μεταβλητές (βάρη και biases κάθε layer)
+\begin{algorithm}[H]
+    \caption{Initialize Variables}
+    \begin{lstlisting}[style=pythonstyle]
+    import numpy as np
+    from matplotlib import pyplot as plt
+    import torch
+    from torchvision import datasets, transforms
+    
+    transform = transforms.ToTensor()
+    
+    train_dataset = datasets.MNIST(root="./data", train=True, 
+                                    transform=transform, download=True)
+    test_dataset = datasets.MNIST(root="./data", train=False, 
+                                    transform=transform, download=True)
+    
+    x_train = train_dataset.data.float() / 255
+    y_train = train_dataset.targets
+    
+    x_test = test_dataset.data.float() / 255
+    y_test = test_dataset.targets
+    
+    W_1 = np.random.rand(784,10) - 0.5
+    b_1 = np.random.rand(10, 1) - 0.5 
+    W_2 = np.random.rand(10, 10) - 0.5
+    b_2 = np.random.rand(10, 1) - 0.5
+    
+    A_layers = []
+    for i in range(len(x_train)):
+        A_layers.append(x_train[i].reshape(784, 1))
+    \end{lstlisting}
+    \end{algorithm}
+    
+    % Ορίζουμε τις συναρτήσεις ενεργοποίησης ReLU και Softmax
+    \begin{algorithm}[H]
+    \caption{ReLU - Softmax}
+    \begin{lstlisting}[style=pythonstyle]
+    def ReLU(x):
+        return np.maximum(0, x)
+    
+    def softmax(Z):
+        Z = Z - np.max(Z)  
+        exp_values = np.exp(Z)
+        sum_exp_values = np.sum(exp_values)
+        return A_out_prob
+    
+    def d_ReLU(x):
+        return x > 0
+    \end{lstlisting}
+    \end{algorithm}
+    
+    % (με d_ReLU να είναι συνάρτηση που επιστρέφει την παράγωγο της ReLU)
+    
+    % Ορίζουμε την Forward και Backward Propagation
+    \begin{algorithm}[H]
+    \caption{Forward Propagation}
+    \begin{lstlisting}[style=pythonstyle]
+    def forwardProp(A , W_1 , b_1, W_2, b_2):
+        A_1 = np.dot(W_1.T , A)
+        Z_1 = A_1 + b_1
+        A_1 = ReLU(Z_1)
+        A_2 = np.dot(W_2.T, A_1)
+        Z_2 = A_2 + b_2
+        A_2 = softmax(Z_2)
+        return A_1, Z_1, A_2 , Z_2
+    
+    def backProp(A, A_1, A_2, Z_1, Z_2, W_1, W_2, mean):
+        vector = np.zeros((10, 1))
+        vector[mean, 0] = 1
+    
+        dZ2 = 2 * (A_2 - vector) 
+        dW2 = np.dot(A_1, dZ2.T)
+        db2 = dZ2
+    
+        dA1 = np.dot(W_2, dZ2) 
+        dZ1 = dA1 * d_ReLU(Z_1) 
+        dW1 = np.dot(A, dZ1.T) 
+        db1 = dZ1
+    
+        return dW1, db1, dW2, db2
+    \end{lstlisting}
+    \end{algorithm}
+    
+    % Τέλος ορίζουμε το Gradient Descent
+    \begin{algorithm}[H]
+    \caption{Gradient Descent}
+    \begin{lstlisting}[style=pythonstyle]
+    def gradientDescent(W_1, b_1, W_2, b_2, learning_rate, epochs):
+        accuracy_list = []
+        
+        for epoch in range(epochs):
+            correct_predictions = 0
+            total_samples = len(x_train)
+            for i in range(total_samples):
+                A = A_layers[i]
+                A_1, Z_1, A_2 , Z_2 = forwardProp(A, W_1, b_1, W_2, b_2)
+    
+                predicted_label = np.argmax(A_2)
+                if predicted_label == y_train[i]:
+                    correct_predictions += 1
+    
+                dW_1, db_1, dW_2, db_2 = backProp(A, A_1, A_2, Z_1, Z_2, W_1, W_2 ,y_train[i])
+    
+                W_1 = W_1 - learning_rate * dW_1
+                b_1 = b_1 - learning_rate * db_1
+                W_2 = W_2 - learning_rate * dW_2
+                b_2 = b_2 - learning_rate * db_2
+            
+            accuracy = (correct_predictions / total_samples) * 100
+            accuracy_list.append(accuracy)
+            print(f"Epoch {epoch+1}, Accuracy: {accuracy:.2f}%")
+    
+            if (epoch + 1) % 5 == 0:
+            learning_rate *= 0.5
+            print(f"Learning rate decayed to {learning_rate}")
+    
+        return accuracy_list[-1], W_1, b_1, W_2, b_2
+    \end{lstlisting}
+    \end{algorithm}
+    
+
 
 \end{document}
