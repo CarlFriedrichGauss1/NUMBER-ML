@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  8 MAR 2025 01:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  20 MAR 2025 18:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -888,12 +888,7 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/datetime2-greek/datetime2-greek-ascii.ldf
 File: datetime2-greek-ascii.ldf 2018/04/18 v1.1
-))) (/usr/local/texlive/2024/texmf-dist/tex/latex/kerkis/kerkis.sty
-File: kerkis.sty 2000/02/25 v1.5 Package `kerkis.sty'
-   *********************************************** ******** Loading The Kerkis FontFamily ******** ********** Department of Mathematics ********** *********** University of the Aegean ********** ***********************************************
-LaTeX Info: Redefining \LaTeX on input line 156.
-LaTeX Info: Redefining \LaTeXe on input line 166.
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+))) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count316
 \lst@gtempboxa=\box64
 \lst@token=\toks46
@@ -917,9 +912,7 @@ File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
 Package: listings 2024/02/21 1.10 (Carsten Heinz)
- (/usr/local/texlive/2024/texmf-dist/tex/latex/eulervm/eulervm.sty
-Package: eulervm 2005/01/11 v4.0 (WaS)
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/algorithms/algorithm.sty
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -951,6 +944,13 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip68
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/kerkis/kerkis.sty
+File: kerkis.sty 2000/02/25 v1.5 Package `kerkis.sty'
+   *********************************************** ******** Loading The Kerkis FontFamily ******** ********** Department of Mathematics ********** *********** University of the Aegean ********** ***********************************************
+LaTeX Info: Redefining \LaTeX on input line 156.
+LaTeX Info: Redefining \LaTeXe on input line 166.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/eulervm/eulervm.sty
+Package: eulervm 2005/01/11 v4.0 (WaS)
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
@@ -970,10 +970,10 @@ File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@layerbox@background=\box68
 \pgf@layerboxsaved@background=\box69
 )
-LaTeX Font Info:    Trying to load font information for OT1+mak on input line 67.
+LaTeX Font Info:    Trying to load font information for OT1+mak on input line 71.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/kerkis/ot1mak.fd)
 LaTeX Font Info:    Font shape `OT1/mak/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 67.
+(Font)              scaled to size 10.79993pt on input line 71.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count333
@@ -981,30 +981,30 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 ) (./ML_Numbers.aux)
 \openout1 = `ML_Numbers.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 67.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 71.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 71.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count334
@@ -1024,15 +1024,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \Upsilon on input line 67.
-LaTeX Info: Redefining \Omega on input line 67.
-LaTeX Info: Redefining \alpha on input line 67.
-LaTeX Info: Redefining \epsilon on input line 67.
-LaTeX Info: Redefining \eta on input line 67.
-LaTeX Info: Redefining \iota on input line 67.
-LaTeX Info: Redefining \rho on input line 67.
-LaTeX Info: Redefining \upsilon on input line 67.
-LaTeX Info: Redefining \omega on input line 67.
+LaTeX Info: Redefining \Upsilon on input line 71.
+LaTeX Info: Redefining \Omega on input line 71.
+LaTeX Info: Redefining \alpha on input line 71.
+LaTeX Info: Redefining \epsilon on input line 71.
+LaTeX Info: Redefining \eta on input line 71.
+LaTeX Info: Redefining \iota on input line 71.
+LaTeX Info: Redefining \rho on input line 71.
+LaTeX Info: Redefining \upsilon on input line 71.
+LaTeX Info: Redefining \omega on input line 71.
    defining Unicode char U+0393 (decimal 915)
    defining Unicode char U+0394 (decimal 916)
    defining Unicode char U+0398 (decimal 920)
@@ -1109,44 +1109,44 @@ LaTeX Info: Redefining \omega on input line 67.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 71.
 (./ML_Numbers.out) (./ML_Numbers.out)
 \@outlinefile=\write4
 \openout4 = `ML_Numbers.out'.
 
 \c@lstlisting=\count340
 LaTeX Font Info:    Font shape `OT1/mak/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 74.
+(Font)              scaled to size 22.39185pt on input line 78.
 LaTeX Font Info:    Font shape `OT1/mak/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 74.
+(Font)              scaled to size 22.39185pt on input line 78.
 LaTeX Font Info:    Font shape `OT1/mak/m/n' will be
-(Font)              scaled to size 15.55188pt on input line 75.
+(Font)              scaled to size 15.55188pt on input line 79.
 LaTeX Font Info:    Font shape `OT1/mak/b/n' will be
-(Font)              scaled to size 15.55188pt on input line 75.
+(Font)              scaled to size 15.55188pt on input line 79.
 LaTeX Font Info:    Font shape `OT1/mak/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 99.
+(Font)              scaled to size 7.19995pt on input line 103.
 LaTeX Font Info:    Font shape `OT1/mak/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 99.
-LaTeX Font Info:    Trying to load font information for U+zeur on input line 99.
+(Font)              scaled to size 5.39996pt on input line 103.
+LaTeX Font Info:    Trying to load font information for U+zeur on input line 103.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Trying to load font information for U+zeus on input line 99.
+LaTeX Font Info:    Trying to load font information for U+zeus on input line 103.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Trying to load font information for U+zeuex on input line 99.
+LaTeX Font Info:    Trying to load font information for U+zeuex on input line 103.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Font shape `OT1/mak/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 125.
-LaTeX Font Info:    Trying to load font information for LGR+mak on input line 125.
+(Font)              scaled to size 12.9599pt on input line 129.
+LaTeX Font Info:    Trying to load font information for LGR+mak on input line 129.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/kerkis/lgrmak.fd)
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 125.
+(Font)              scaled to size 12.9599pt on input line 129.
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 127.
+(Font)              scaled to size 10.79993pt on input line 131.
  [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/kerkis/kerkis.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/kerkis/gpkerkis.enc}] (./ML_Numbers.toc
@@ -1160,7 +1160,7 @@ LaTeX Font Info:    Font shape `LGR/mak/b/n' will be
 
  [1]
 LaTeX Font Info:    Font shape `LGR/mak/b/n' will be
-(Font)              scaled to size 15.55188pt on input line 163.
+(Font)              scaled to size 15.55188pt on input line 167.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1173,7 +1173,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.248 \newpage
+l.252 \newpage
                [1
 
 ]
@@ -1186,9 +1186,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 LaTeX Font Info:    Font shape `OT1/mak/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 293.
+(Font)              scaled to size 7.19995pt on input line 297.
 LaTeX Font Info:    Font shape `OT1/mak/b/n' will be
-(Font)              scaled to size 5.39996pt on input line 293.
+(Font)              scaled to size 5.39996pt on input line 297.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1222,24 +1222,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
-LaTeX Font Info:    Trying to load font information for OT1+maksf on input line 555.
+LaTeX Font Info:    Trying to load font information for OT1+maksf on input line 559.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/kerkis/ot1maksf.fd)
 LaTeX Font Info:    Font shape `OT1/maksf/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 555.
+(Font)              scaled to size 10.79993pt on input line 559.
 LaTeX Font Info:    Font shape `OT1/maksf/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 555.
+(Font)              scaled to size 9.85492pt on input line 559.
 LaTeX Font Info:    Font shape `OT1/mak/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 555.
+(Font)              scaled to size 9.85492pt on input line 559.
 LaTeX Font Info:    Font shape `OT1/mak/b/n' will be
-(Font)              scaled to size 9.85492pt on input line 555.
+(Font)              scaled to size 9.85492pt on input line 559.
 LaTeX Font Info:    Font shape `OT1/maksf/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 594.
-LaTeX Font Info:    Trying to load font information for LGR+maksf on input line 631.
+(Font)              scaled to size 10.79993pt on input line 598.
+LaTeX Font Info:    Trying to load font information for LGR+maksf on input line 635.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/kerkis/lgrmaksf.fd)
 LaTeX Font Info:    Font shape `LGR/maksf/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 631.
+(Font)              scaled to size 9.85492pt on input line 635.
 
-Overfull \hbox (34.98412pt too wide) in paragraph at lines 644--645
+Overfull \hbox (34.98412pt too wide) in paragraph at lines 648--649
 [][] 
  []
 
@@ -1251,12 +1251,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]
-Overfull \hbox (13.62752pt too wide) in paragraph at lines 681--687
+Overfull \hbox (13.62752pt too wide) in paragraph at lines 685--691
 \LGR/mak/m/n/12 EpomËnwc kàje stoiqe–o tou p–-naka e–-nai thc mor-f†c $\OT1/mak/m/n/12 2\U/zeus/m/n/12 ®\U/zeur/m/n/12 a[] \U/zeus/m/n/12 ^^@ \U/zeur/m/n/12 y[]\U/zeus/m/n/12 © ^^A \U/zeur/m/n/12 a[]\OT1/mak/m/n/12 , \U/zeus/m/n/12 8\U/zeur/m/n/12 i\OT1/mak/m/n/12 , \U/zeur/m/n/12 j \U/zeus/m/n/12 2 f\OT1/mak/m/n/12 1, 2, [] , 10\U/zeus/m/n/12 g$
  []
 
 
-Overfull \hbox (28.76178pt too wide) detected at line 791
+Overfull \hbox (28.76178pt too wide) detected at line 795
 []
  []
 
@@ -1284,8 +1284,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 851.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 852.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 855.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 856.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -1321,15 +1321,15 @@ Package rerunfilecheck Info: File `ML_Numbers.out' has not changed.
 (rerunfilecheck)             Checksum: FBCAEC9DB2DC8F62D087D08EA1D2A8FB;1385.
  ) 
 Here is how much of TeX's memory you used:
- 32055 strings out of 474116
- 607650 string characters out of 5743682
+ 32057 strings out of 474116
+ 607662 string characters out of 5743682
  2257187 words of memory out of 5000000
  53714 multiletter control sequences out of 15000+600000
- 592872 words of font info for 132 fonts, out of 8000000 for 9000
+ 593274 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,17n,107p,1154b,1538s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/kerkis/Kerkis-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/kerkis/Kerkis.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/kerkis/KerkisSans-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/kerkis/KerkisSans.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on ML_Numbers.pdf (15 pages, 200912 bytes).
+Output written on ML_Numbers.pdf (15 pages, 201010 bytes).
 PDF statistics:
  467 PDF objects out of 1000 (max. 8388607)
  307 compressed objects within 4 object streams

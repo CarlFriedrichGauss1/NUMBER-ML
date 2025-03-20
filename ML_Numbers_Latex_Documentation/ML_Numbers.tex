@@ -16,14 +16,18 @@
 \usepackage{fancyhdr}
 \usepackage{datetime2}
 \usepackage{xcolor}
-\usepackage{kerkis} %ΚΑΛΟΟΟΟ
 \usepackage{listings}
 \usepackage{xcolor}
-\usepackage{eulervm}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{float}
 \usepackage{algpseudocode}
+
+\usepackage{kerkis} %ΚΑΛΟΟΟΟ
+\usepackage{eulervm}
+
+
+
 
 
 \lstdefinestyle{pythonstyle}{
@@ -122,7 +126,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
         \vfill
 
-    {\large Βασίλης Ρουσόπουλος \par}
+    {\large Βασίλης Ρουσόπουλος\par}
     %{\large Προπτυχιακός Φοιτητής Μαθηματικού Αθήνας ΕΚΠΑ \par}
     (Documentation του σχετικού προγράμματος αναγνώρισης χειρόγραφων αριθμών)
 \end{titlepage}
@@ -643,7 +647,7 @@ $};
 % Κείμενο τίτλου
 \end{tikzpicture}
 
-Στην περίπτωση αυτή κάθε βάρος και bias συμβάλει στο διάνυσμα του output layer και επομένως η μερική παράγωγος του loss προς αυτά θα είναι πιο σύνθετη. Συγκεκριμένα για τα βαρη και biases του $l-1$ layer θα έχουμε
+Στην περίπτωση αυτή κάθε βάρος και bias συμβάλει σε κάθε $y_i$ του output layer και επομένως η μερική παράγωγος του loss προς αυτά θα είναι πιο σύνθετη. Συγκεκριμένα για τα βαρη και biases του $l-1$ layer θα έχουμε
 
 \begin{align}
 \frac{\partial \mathcal{L}}{\partial w_{i}^{(l-1)}}  &=  \frac{\partial a_{i}^{(l-1)}}{\partial z_{i}^{(l-1)}}  \cdot \frac{\partial z_{i}^{(l-1)}}{\partial w_{i,j}^{(l-1)}} \cdot \frac{\partial \mathcal{L}}{\partial a_{i}^{(l-1)}}  \label{eq:grad_weight1} \\
@@ -966,6 +970,5 @@ w_{10,1} & w_{10,2} & \ldots & w_{10,10}
     \end{lstlisting}
     \end{algorithm}
     
-
 
 \end{document}

@@ -1,5 +1,5 @@
-not_mandatory = [9, 9, 10, 10, 7, 10]
-mandatory = [8, 9, 6, 6, 5, 9, 9, 7]
+not_mandatory = [9, 9, 10, 8,8]
+mandatory = [8, 9, 6, 6, 5, 9, 9,5,9,9,10]
 
 sum_of_weights = 0
 sum_of_mandatory = 0
