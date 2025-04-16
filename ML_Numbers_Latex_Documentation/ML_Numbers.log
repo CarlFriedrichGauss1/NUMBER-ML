@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  20 MAR 2025 18:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  20 MAR 2025 18:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1321,15 +1321,15 @@ Package rerunfilecheck Info: File `ML_Numbers.out' has not changed.
 (rerunfilecheck)             Checksum: FBCAEC9DB2DC8F62D087D08EA1D2A8FB;1385.
  ) 
 Here is how much of TeX's memory you used:
- 32057 strings out of 474116
- 607662 string characters out of 5743682
+ 32055 strings out of 474116
+ 607650 string characters out of 5743682
  2257187 words of memory out of 5000000
  53714 multiletter control sequences out of 15000+600000
- 593274 words of font info for 134 fonts, out of 8000000 for 9000
+ 592872 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,17n,107p,1154b,1538s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/kerkis/Kerkis-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/kerkis/Kerkis.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/kerkis/KerkisSans-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/kerkis/KerkisSans.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on ML_Numbers.pdf (15 pages, 201010 bytes).
+Output written on ML_Numbers.pdf (15 pages, 200907 bytes).
 PDF statistics:
  467 PDF objects out of 1000 (max. 8388607)
  307 compressed objects within 4 object streams
